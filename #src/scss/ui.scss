@@ -18,6 +18,10 @@ h3 {
   font-weight: 500;
   @include adaptiv-font(24, 18, 24);
 }
+h4 {
+  font-size: 14px;
+  line-height: 18px;
+}
 
 .phone {
   font-weight: 500;
@@ -110,21 +114,19 @@ h3 {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  background: #000;
-  width: 40px;
-  height: 40px;
+  visibility: hidden;
+  background: $mainColor;
+  @include adaptiv-value("width", 40, 0, 1);
+  @include adaptiv-value("height", 40, 0, 1);
   border-radius: 50%;
   color: $whiteColor;
-  position: absolute;
-  bottom: 13px;
-  left: 13px;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
   @extend %ic;
   @extend ._icon-arrow-r;
+  font-size: 12px;
 }
 
-._bgcolor-hover {
+._rgba {
   position: absolute;
   top: 0;
   left: 0;
@@ -132,94 +134,49 @@ h3 {
   height: 100%;
   opacity: 0;
   z-index: -1;
-  transition: all 0.3s ease 0s;
-
-  &_blue {
+  transition: opacity 0.3s ease 0s;
+  &-blue {
     background: linear-gradient(
       221.35deg,
       rgba(255, 239, 166, 0) 0%,
       #d4eefc 100%
     );
   }
-  &_yellow {
+  &-yellow {
     background: linear-gradient(
       221.35deg,
       rgba(255, 239, 166, 0) 0%,
       #ffefa6 100%
     );
   }
-  &_purple {
+  &-purple {
     background: linear-gradient(
       221.35deg,
       rgba(255, 239, 166, 0) 0%,
       #e5d4fc 100%
     );
   }
-  &_green {
+  &-green {
     background: linear-gradient(
       221.35deg,
       rgba(255, 239, 166, 0) 0%,
       #b1f1d0 100%
     );
   }
-  &_beige {
+  &-beige {
     background: linear-gradient(
       221.35deg,
       rgba(255, 239, 166, 0) 0%,
       #ffe1d3 100%
     );
   }
-  &_gray {
+  &-gray {
     background: linear-gradient(
       221.35deg,
       rgba(255, 239, 166, 0) 0%,
       #e1e1e1 100%
     );
   }
-}
-
-
-._rgba-blue {
-  background: linear-gradient(
-    221.35deg,
-    rgba(255, 239, 166, 0) 0%,
-    #d4eefc 100%
-  );
-}
-._rgba-yellow {
-  background: linear-gradient(
-    221.35deg,
-    rgba(255, 239, 166, 0) 0%,
-    #ffefa6 100%
-  );
-}
-._rgba-purple {
-  background: linear-gradient(
-      221.35deg,
-      rgba(255, 239, 166, 0) 0%,
-      #e5d4fc 100%
-    );
-}
-._rgba-green {
-  background: linear-gradient(
-      221.35deg,
-      rgba(255, 239, 166, 0) 0%,
-      #b1f1d0 100%
-    );
-}
-._rgba-beige {
-  background: linear-gradient(
-      221.35deg,
-      rgba(255, 239, 166, 0) 0%,
-      #ffe1d3 100%
-    );
-}
-._rgba-gray {
-  background: linear-gradient(
-      221.35deg,
-      rgba(255, 239, 166, 0) 0%,
-      #e1e1e1 100%
-    );
 }
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
