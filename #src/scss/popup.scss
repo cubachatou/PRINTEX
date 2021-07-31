@@ -1,0 +1,193 @@
+//====================================================================================================
+.popup {
+	-webkit-overflow-scrolling: touch;
+	z-index: 100;
+	padding: 30px 10px;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	&::before {
+		content: "";
+		background-color: rgba(0, 0, 0, 0.9);
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.8s ease 0s;
+	}
+	&.show {
+		visibility: visible;
+		overflow: auto;
+		&::before {
+			opacity: 1;
+		}
+		.popup__body {
+			transform: scale(1);
+		}
+	}
+	&._active {
+		overflow: auto;
+		visibility: visible;
+    color: $mainColor;
+		&::before {
+			opacity: 0.5;
+		}
+		.popup__body {
+			transition: all 0.3s ease 0.2s;
+			transform: scale(1);
+		}
+	}
+	// .popup__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 100%;
+		flex: 1 1 auto;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .popup__body
+	&__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+		transform: scale(0);
+		transition: all 0.3s ease 0s;
+		background-color: #fff;
+    @include adaptiv-value(padding-top, 20, 20, 1);
+    @include adaptiv-value(padding-bottom, 30, 30, 1);
+    @include adaptiv-value(padding-left, 80, 40, 1);
+    @include adaptiv-value(padding-right, 80, 40, 1);
+		width: 100%;
+		max-width: 655px;
+	}
+	// .popup__close
+	&__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+		font-size: 10px;
+		position: absolute;
+		top: -33px;
+		right: 0px;
+		cursor: pointer;
+		z-index: 30;
+    background-color: $whiteColor;
+	}
+  &__title {
+    @extend h1;
+    margin-bottom: 5px;
+  }
+		// .popup__text
+  &__text {
+    @include adaptiv-font(16, 14, 16);
+    margin-bottom: 15px;
+    line-height: 24 / 16 * 100%;
+    color: $gray80;
+  }
+}
+//====================================================================================================
+.callback {
+		// .callback__date
+		&__date {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & input {
+        display: none;
+      }
+		}
+		// .callback__box
+		&__box {
+      position: relative;
+      opacity: 0.3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 auto;
+      max-width: 62px;
+      @include adaptiv-value(padding-top, 9, 0, 1);
+      @include adaptiv-value(padding-bottom, 9, 0, 1);
+      @include adaptiv-value(padding-left, 13.25, 0, 1);
+      @include adaptiv-value(padding-right, 13.25, 0, 1);
+      border: 1px solid $mainColor;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      @media (any-hover: hover) {
+        &:hover {
+          opacity: 1;
+        }
+      }
+      @media (max-width: $md4+px) {
+        flex: 0 0 14.285%;
+        // &:not(:last-child) {
+        //   border-right: none;
+        // }
+      }
+      
+			// .callback__box_day
+			&_day {
+        @include adaptiv-value(margin-bottom, 12, 0, 12);
+        font-weight: 500;
+        @include adaptiv-font(18, 11, 18);
+        // line-height: 18 / 18 * 100%;
+        text-transform: uppercase;
+			}
+			// .callback__box_date
+			&_date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        @include adaptiv-font(12, 9, 12);
+        @media (max-width: $md4+px) {
+          flex-direction: column;
+        }
+			}
+		}
+}
+
+#day1:checked ~ label[for="day1"],
+#day2:checked ~ label[for="day2"],
+#day3:checked ~ label[for="day3"],
+#day4:checked ~ label[for="day4"],
+#day5:checked ~ label[for="day5"],
+#day6:checked ~ label[for="day6"],
+#day7:checked ~ label[for="day7"] {
+  opacity: 1;
+  &:before {
+    z-index: 1;
+    @extend %ic;
+    @extend ._icon-check;
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    font-size: 7px;
+    height: 15px;
+    width: 15px;
+    background: $mainColor url(../img/icons/check.svg) no-repeat 50% 50%/ auto;
+    color: $whiteColor;
+    border-radius: 50%;
+    @media (max-width: $md3+px) {
+      height: 10px;
+      width: 10px;
+      background: $mainColor url(../img/icons/check.svg) no-repeat 50% 65%/ 60%;
+    }
+  }
+}
+
+//====================================================================================================

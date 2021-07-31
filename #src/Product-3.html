@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('_head.html',{ "title":"Буклеты" })
+  <body>
+    <div class="wrapper">
+      @@include('_header.html',{})
+      <main class="page">
+        <section class="product">
+          <div class="product__header-content _container">
+            <div class="product__header header-product _rgba-yellow">
+              <div class="header-product__main">
+                <div data-da=".header-product__textarea,767.98,first" class="header-product__icon"></div>
+                <div class="header-product__textarea">
+                  <h2 class="header-product__title">Буклеты</h2>
+                  <p class="header-product__text">
+                    Имидж любой компании состоит из огромного количества
+                    деталей, качество печати берем на себя.
+                  </p>
+                </div>
+                <a href="#help" class="header-product__btn btn btn_tp btn_s _popup-link">Заказать консультацию</a>
+              </div>
+            </div>
+          </div>
+          <div class="product__body-content _container">
+            <div class="product__body body-product">
+              <div class="body-product__column_left">
+                <div class="body-product__imgblock body-product__imgblock_3"></div>
+              </div>
+              <div class="body-product__column_right">
+                <form action="#" class="form" id="order">
+                  <div class="form__line">
+                    <label class="select__label">Выберите вид буклетов</label>
+                    <select name="Вид буклетов" class="body-product__booklet-type">
+                      <option value="1">Буклет в 3 фальца</option>
+                      <option value="2">Замечательный буклет</option>
+                      <option value="3">Отличный буклет</option>
+                    </select>
+                  </div>
+                  <div class="form__line">
+                    <label class="select__label">Выберите формат буклетов</label>
+                    <select name="Формат буклетов" class="body-product__booklet-format">
+                      <option value="1">A4 (21x30 см)</option>
+                      <option value="2">Замечательный буклет</option>
+                      <option value="3">Отличный буклет</option>
+                    </select>
+                  </div>
+                  <!-----------------RANGE----------------------->
+                  <div class="form__line form__line_range">
+                    <label for="product__range">Количество</label>
+                    <input type="number" name="Количество" class="input input_range" id="input_range" min="500" max="5000" step="500">
+                    <div class="product__range"></div>
+                  </div>
+                  <!-----------------RANGE----------------------->
+                  <button href="#order" class="btn_s btn _popup-link">
+                    Оформить заказ
+                  </button>
+                </form>
+              </div>
+              <div class="body-product__list">
+                <a href="Help.html" class="
+                    body-product__link body-product__link_requirements
+                    _icon-AI
+                  ">Требование к макетам</a>
+                <label for="upload" class="body-product__link body-product__link_upload
+                    _icon-fex">
+                  Загрузить макет
+                  <input type="file" id="upload" style="display: none;" form="order" data-error="Загрузите Ваш макет">
+                </label>
+                <a href="#design" class="
+                    body-product__link body-product__link_order
+                    _icon-design _popup-link
+                  ">Заказать дизайн</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+        <div class="product__table table-product _container">
+          <table class="table-product__table table table_1">
+            <tr class="table-product__row">
+              <th class="table-product__format">
+                Тираж формата А4 (21х30 см.)
+              </th>
+              <th class="table-product__number">500 шт.</th>
+              <th class="table-product__number">1&nbsp;000 шт.</th>
+              <th class="table-product__number">2&nbsp;500 шт.</th>
+              <th class="table-product__number">5&nbsp;000 шт.</th>
+            </tr>
+            <tr class="table-product__row">
+              <td class="table-product__name">Буклет в 1 фальц</td>
+              <td class="table-product__cost">1&nbsp;250 грн.</td>
+              <td class="table-product__cost">1&nbsp;650 грн.</td>
+              <td class="table-product__cost">2&nbsp;500 грн.</td>
+              <td class="table-product__cost">4&nbsp;180 грн.</td>
+            </tr>
+            <tr class="table-product__row">
+              <td class="table-product__name">Буклет в 2 фальца</td>
+              <td class="table-product__cost">1&nbsp;250 грн.</td>
+              <td class="table-product__cost">1&nbsp;650 грн.</td>
+              <td class="table-product__cost">2&nbsp;500 грн.</td>
+              <td class="table-product__cost">4&nbsp;180 грн.</td>
+            </tr>
+            <tr class="table-product__row">
+              <td class="table-product__name table-product__last">
+                Буклет в 3 фальца
+              </td>
+              <td class="table-product__cost table-product__last">
+                1&nbsp;250 грн.
+              </td>
+              <td class="table-product__cost table-product__last">
+                1&nbsp;650 грн.
+              </td>
+              <td class="table-product__cost table-product__last">
+                2&nbsp;500 грн.
+              </td>
+              <td class="table-product__cost table-product__last">
+                4&nbsp;180 грн.
+              </td>
+            </tr>
+          </table>
+          <table class="table-product__table table table_2">
+            <tr class="table-product__row">
+              <th class="table-product__format">
+                Тираж формата А4 (21х30 см.)
+              </th>
+              <th class="table-product__number">500 шт.</th>
+              <th class="table-product__number">1&nbsp;000 шт.</th>
+              <th class="table-product__number">2&nbsp;500 шт.</th>
+              <th class="table-product__number">5&nbsp;000 шт.</th>
+            </tr>
+            <tr class="table-product__row">
+              <td class="table-product__name">Буклет в 1 фальц</td>
+              <td class="table-product__cost">1&nbsp;250 грн.</td>
+              <td class="table-product__cost">1&nbsp;650 грн.</td>
+              <td class="table-product__cost">2&nbsp;500 грн.</td>
+              <td class="table-product__cost">4&nbsp;180 грн.</td>
+            </tr>
+            <tr class="table-product__row">
+              <td class="table-product__name">Буклет в 1 фальц</td>
+              <td class="table-product__cost">1&nbsp;250 грн.</td>
+              <td class="table-product__cost">1&nbsp;650 грн.</td>
+              <td class="table-product__cost">2&nbsp;500 грн.</td>
+              <td class="table-product__cost">4&nbsp;180 грн.</td>
+            </tr>
+            <tr class="table-product__row">
+              <td class="table-product__name table-product__last">
+                Буклет в 1 фальц
+              </td>
+              <td class="table-product__cost table-product__last">
+                1&nbsp;250 грн.
+              </td>
+              <td class="table-product__cost table-product__last">
+                1&nbsp;650 грн.
+              </td>
+              <td class="table-product__cost table-product__last">
+                2&nbsp;500 грн.
+              </td>
+              <td class="table-product__cost table-product__last">
+                4&nbsp;180 грн.
+              </td>
+            </tr>
+          </table>
+          <div class="table-product__mobile mobile-table">
+            <h3 class="mobile-table__title">Тираж формата А4 (21х30 см.)</h3>
+            <p class="mobile-table__number">500 шт.</p>
+            <table class="mobile-table__table table mobile-table_1">
+              <tr class="mobile-table__row">
+                <td class="mobile-table__name">Буклет в 1 фальц</td>
+                <td class="mobile-table__cost">1 250 грн.</td>
+              </tr>
+              <tr class="mobile-table__row">
+                <td class="mobile-table__name">Буклет в 2 фальц</td>
+                <td class="mobile-table__cost">1 250 грн.</td>
+              </tr>
+              <tr class="mobile-table__row">
+                <td class="mobile-table__name">Буклет в 3 фальц</td>
+                <td class="mobile-table__cost">1 250 грн.</td>
+              </tr>
+            </table>
+            <p class="mobile-table__number">1000 шт.</p>
+            <table class="mobile-table__table table mobile-table_2">
+              <tr class="mobile-table__row">
+                <td class="mobile-table__name">Буклет в 1 фальц</td>
+                <td class="mobile-table__cost">1 650 грн.</td>
+              </tr>
+              <tr class="mobile-table__row">
+                <td class="mobile-table__name">Буклет в 2 фальц</td>
+                <td class="mobile-table__cost">1 650 грн.</td>
+              </tr>
+              <tr class="mobile-table__row">
+                <td class="mobile-table__name">Буклет в 3 фальц</td>
+                <td class="mobile-table__cost">1 650 грн.</td>
+              </tr>
+            </table>
+            <p class="mobile-table__number">2500 шт.</p>
+            <table class="mobile-table__table table mobile-table_3">
+              <tr class="mobile-table__row">
+                <td class="mobile-table__name">Буклет в 1 фальц</td>
+                <td class="mobile-table__cost">2 500 грн.</td>
+              </tr>
+              <tr class="mobile-table__row">
+                <td class="mobile-table__name">Буклет в 2 фальц</td>
+                <td class="mobile-table__cost">2 500 грн.</td>
+              </tr>
+              <tr class="mobile-table__row">
+                <td class="mobile-table__name">Буклет в 3 фальц</td>
+                <td class="mobile-table__cost">2 500 грн.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--  -->
+        <section class="product-info _container">
+          <div>
+            <h1>Что такое буклеты?</h1>
+            <p>
+              Буклет – небольшое печатное изделие, напечатанное на 1 листе и
+              сфальцованное (согнутое) один, два или больше раз. Довольно
+              распространенный размер буклета – так называемый, евробуклет:
+              буклет А4 с двумя сгибами. Это отличное решение для директ-мейла,
+              поскольку оно идеально подходит под размер евроконверта.
+            </p>
+            <p>
+              Однако перечень форматов на этом совершенно не ограничивается.
+              Буклет А5 также является довольно популярным выбором, равно как и
+              буклет крупного формата А3.
+            </p>
+            <p>
+              В отличие от листовок такого же формата, буклет дает возможность
+              более удобно и наглядно группировать текстовый контент и
+              изображения.
+            </p>
+          </div>
+          <div>
+            <h2>
+              Яркие буклеты: образцы хорошего вкуса
+            </h2>
+            <p>
+              Дизайн буклета для продвижения должен быть актуальным, красочным и
+              интересным. Можно сказать, что дизайн - самая яркая уловка или
+              идея, привлекающая внимание покупателя. Важно заинтересовать
+              потенциального клиента прочесть содержимое и воспользоваться
+              предлагаемыми услугами или продуктами.
+            </p>
+            <p>
+              Наиболее оригинальные изделия вызывают желание показать их друзьям
+              или поделиться фотографиями в социальных сетях, что существенно
+              увеличивает охват. Вот почему стоит особое внимание уделить не
+              только макету, но и выбору материалов, послепечатной обработке.
+            </p>
+          </div>
+        </section>
+        <!--  -->
+        <section class="product__another another-product _container">
+          <h3 class="another-product__title">Другая продукция</h3>
+          <div class="another-product__productarea _swiper _swiper_scroll">
+            <div class="another-product__product another-product__product_1">
+                <a href="" class="another-product__link"></a>
+                <h4 class="another-product__product-title">
+                  Печать на Акриле
+                </h4>
+                <p class="another-product__product-subtitle">
+                  Печать на орг.стекле
+                </p>
+                <div
+                  class="another-product__icon another-product__icon_1"
+                ></div>
+                <span class="_bgcolor-hover _bgcolor-hover_gray"></span>
+                <div class="_icon-productArrow"></div>
+              </div>
+            <div class="another-product__product another-product__product_2">
+                <a href="" class="another-product__link"></a>
+                <h4 class="another-product__product-title">
+                  Печать на пластике ПВХ
+                </h4>
+                <p class="another-product__product-subtitle">
+                  Цифровая печать с перфорацией
+                </p>
+                <div
+                  class="another-product__icon another-product__icon_2"
+                ></div>
+                <span class="_bgcolor-hover _bgcolor-hover_green"></span>
+                <div class="_icon-productArrow"></div>
+              </div>
+            <div class="another-product__product another-product__product_3">
+                <a href="" class="another-product__link"></a>
+                <h4 class="another-product__product-title">
+                  Наклейки
+                </h4>
+                <p class="another-product__product-subtitle">
+                  Стикеры премиум качества на бумаге или пленке
+                </p>
+                <div
+                  class="another-product__icon another-product__icon_3"
+                ></div>
+                <span class="_bgcolor-hover _bgcolor-hover_beige"></span>
+                <div class="_icon-productArrow"></div>
+              </div>
+            <div class="another-product__product another-product__product_4">
+                <a href="" class="another-product__link"></a>
+                <h4 class="another-product__product-title">
+                  Плакаты
+                </h4>
+                <p class="another-product__product-subtitle">
+                  Календари любых размеров с креативным дизайном
+                </p>
+                <div
+                  class="another-product__icon another-product__icon_4"
+                ></div>
+                <span class="_bgcolor-hover _bgcolor-hover_purple"></span>
+                <div class="_icon-productArrow"></div>
+              </div>
+            <div class="another-product__product another-product__product_5">
+                <a href="" class="another-product__link"></a>
+                <h4 class="another-product__product-title">
+                  Фотообои
+                </h4>
+                <p class="another-product__product-subtitle">
+                  Большое количество форматов и видов бумаги
+                </p>
+                <div
+                  class="another-product__icon another-product__icon_5"
+                ></div>
+                <span class="_bgcolor-hover _bgcolor-hover_yellow"></span>
+                <div class="_icon-productArrow"></div>
+              </div>
+            <div class="another-product__product another-product__product_6">
+              <a href="" class="another-product__link"></a>
+              <h4 class="another-product__product-title">Широкоформатная печать</h4>
+              <p class="another-product__product-subtitle">Печать визоток любой формы и сложности</p>
+              <div class="another-product__icon another-product__icon_6"></div>
+              <span class="_bgcolor-hover _bgcolor-hover_blue"></span>
+              <div class="_icon-productArrow"></div>
+            </div>
+            <div class="another-product__product another-product__product_7">
+              <a href="" class="another-product__link"></a>
+              <h4 class="another-product__product-title">Широкоформатная печать</h4>
+              <p class="another-product__product-subtitle">Печать визоток любой формы и сложности</p>
+              <div class="another-product__icon another-product__icon_7"></div>
+              <span class="_bgcolor-hover _bgcolor-hover_blue"></span>
+              <div class="_icon-productArrow"></div>
+            </div>
+            <div class="another-product__product another-product__product_8">
+              <a href="" class="another-product__link"></a>
+              <h4 class="another-product__product-title">Широкоформатная печать</h4>
+              <p class="another-product__product-subtitle">Печать визоток любой формы и сложности</p>
+              <div class="another-product__icon another-product__icon_8"></div>
+              <span class="_bgcolor-hover _bgcolor-hover_blue"></span>
+              <div class="_icon-productArrow"></div>
+            </div>
+            <div class="another-product__product another-product__product_9">
+              <a href="" class="another-product__link"></a>
+              <h4 class="another-product__product-title">Широкоформатная печать</h4>
+              <p class="another-product__product-subtitle">Печать визоток любой формы и сложности</p>
+              <div class="another-product__icon another-product__icon_9"></div>
+              <span class="_bgcolor-hover _bgcolor-hover_blue"></span>
+              <div class="_icon-productArrow"></div>
+            </div>
+            <div class="another-product__product another-product__product_10">
+              <a href="" class="another-product__link"></a>
+              <h4 class="another-product__product-title">Широкоформатная печать</h4>
+              <p class="another-product__product-subtitle">Печать визоток любой формы и сложности</p>
+              <div class="another-product__icon another-product__icon_10"></div>
+              <span class="_bgcolor-hover _bgcolor-hover_blue"></span>
+              <div class="_icon-productArrow"></div>
+            </div>
+            <div class="another-product__product another-product__product_11">
+              <a href="" class="another-product__link"></a>
+              <h4 class="another-product__product-title">Широкоформатная печать</h4>
+              <p class="another-product__product-subtitle">Печать визоток любой формы и сложности</p>
+              <div class="another-product__icon another-product__icon_11"></div>
+              <span class="_bgcolor-hover _bgcolor-hover_blue"></span>
+              <div class="_icon-productArrow"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('_footer.html',{})
+    </div>
+    @@include('_popup.html',{}) @@include('_js.html',{})
+  </body>
+</html>

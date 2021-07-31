@@ -1,0 +1,236 @@
+.whyus {
+  @include adaptiv-value(padding-bottom, 120, 60, 0);
+		// .whyus__content
+		&__content {
+		}
+		// .whyus__body
+		&__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (min-width: $md2+px) {
+        padding-right: 39px;
+      }
+		}
+		// .whyus__main
+		&__main {
+      flex: 0 0 515.8px;
+		}
+		// .whyus__logo
+		&__logo {
+      margin-left: 5px;
+      @include adaptiv-value(margin-bottom, 30, 18, 1);
+      font-size: 18px;
+		}
+		// .whyus__title
+		&__title {
+      @include adaptiv-value(margin-bottom, 20, 10, 1);
+		}
+		// .whyus__text
+		&__text {
+      @include adaptiv-value(margin-bottom, 64, 30, 1);
+      line-height: 24 / 16 * 100%;
+      color: $gray80;
+		}
+		// .whyus__services
+		&__services {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+		}
+		// .whyus__price
+		&__price {
+      flex: 1 1 33.333%
+		}
+		// .whyus__equipment
+		&__equipment {
+      flex: 1 1 33.333%
+		}
+		// .whyus__discount
+		&__discount {
+      flex: 1 1 33.333%
+		}
+		// .whyus__consultation
+		&__consultation {
+      flex: 0 1 360px;
+      margin-top: 20px;
+		}
+}
+
+.price {
+  flex: 0 0 96px;
+		// .price__icon
+		&__icon {
+      margin-bottom: 20px;
+      font-size: 41px;
+      min-height: 42px
+		}
+		// .price__text
+		&__text {
+      line-height: 18/16 * 100%;
+		}
+}
+.equipment {
+  flex: 0 0 170px;
+		// .equipment__icon
+		&__icon {
+      margin-bottom: 15px;
+      font-size: 46px;
+		}
+		// .equipment__text
+		&__text {
+      line-height: 18/16 * 100%;
+		}
+}
+.discount {
+  flex: 0 0 123px;
+		// .discount__icon
+		&__icon {
+      margin-bottom: 20px;
+      font-size: 42px;
+      min-height: 42px
+		}
+		// .discount__text
+		&__text {
+      line-height: 18/16 * 100%;
+		}
+}
+.consultation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+		// .consultation__img
+		&__img {
+      margin-left: -60px;
+      margin-bottom: 30px;
+      width: 163px;
+      height: 146px;
+      background: url(../img/whyUs/mail.png) no-repeat 30% 50% / contain;
+      @media (max-width: 858px) {
+        background: url(../img/whyUs/mail.png) no-repeat 50% 50% / contain;
+        flex: 0 0 163px;
+        order: 2;
+        // background: url(../img/whyUs/mail.png) no-repeat 50% 50% / auto;
+      }
+      // @media (max-width: $md4+px) {
+      //   background: url(../img/whyUs/mail.png) no-repeat 50% 50% / contain;
+      //   max-height: 91px;
+      // }
+		}
+		// .consultation__text
+		&__text {
+      @include adaptiv-value(margin-bottom, 40, 0, 1);
+      text-align: center;
+      color: $gray80;
+      line-height: 20/16 * 100%;
+      @media (max-width: 858px) {
+        text-align: left;
+        flex: 0 0 60%;
+      }
+		}
+		// .consultation__btn
+		&__btn {
+      padding: 17px 24.15px;
+		}
+}
+
+
+@media (max-width: $md2+px) {
+  .whyus {
+		&__services {
+      flex-wrap: wrap;
+		}
+}
+
+  .price {
+    display: flex;
+    flex: 1 0 145px;
+      // .price__icon
+      &__icon {
+        margin-right: 9px;
+      }
+      // .price__text
+      &__text {
+        font-size: 14px;
+        padding-top: 13px;
+      }
+}
+
+  .equipment {
+    display: flex;
+    order: 3;
+    flex: 1 1 100%;
+      // .equipment__icon
+      &__icon {
+        margin: 0 9px 0 0;
+      }
+      // .equipment__text
+      &__text {
+        font-size: 14px;
+        padding-top: 7px;
+      }
+  }
+
+  .discount {
+    display: flex;
+    flex: 1 0 auto;
+      // .discount__icon
+      &__icon {
+        margin-right: 7px;
+      }
+      // .discount__text
+      &__text {
+        font-size: 14px;
+        padding-top: 13px;
+      }
+  }
+
+  .consultation {
+      &__btn {
+        // margin-top: 20px;
+        margin-bottom: 0;
+      }
+  }
+  body > div > main > section.whyus > div > div > div.whyus__consultation.consultation > a {
+  margin-bottom: 0;
+}
+}
+
+@media (max-width: 858px) {
+  .whyus {
+    &__main {
+      flex: 0 0 auto;
+    }
+    &__body {
+      flex-direction: column;
+    }
+    &__services {
+      justify-content: space-around;
+    }
+    &__item {
+      flex: 0 1 auto;
+    }
+    &__consultation {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  .consultation {
+    flex: 0 0 auto;
+    justify-content: space-around;
+    & img {
+      margin: 0;
+      order: 2;
+    }
+    &__text {
+      order: 1;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__btn {
+      order: 3;
+    }
+    
+  }
+}
