@@ -412,117 +412,60 @@
 }
 //====================================================================================================
 //====================================================================================================
-.product {
-  // .product__another
-  &__another {
-    margin-bottom: 76px;
-  }
-}
 .another-product {
-  &__link {
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    color: $mainColor;
-  }
-  // .another-product__title
-  &__title {
-    @include adaptiv-value(margin-bottom, 30, 20, 1);
-    @include adaptiv-font(36, 30, 36);
-    line-height: 36px;
-    font-weight: 500;
-  }
-  // .another-product__productarea
-  &__productarea {
-    min-width: 0;
-    margin: 0 -5px;
-  }
-  // .another-product__product
-  &__product {
-    position: relative;
-    flex: 0 0 212 / 1330 * 100%;
-    margin: 0 5px;
-    padding: 20px 0 100px 0;
-    @include adaptiv-value(padding-left, 15, 10, 1);
-    @include adaptiv-value(padding-right, 15, 10, 1);
-    min-height: 226px;
-    max-height: 226px;
-    min-width: 147px;
-    border: 1px solid #f3f5f8;
-    border-radius: 1px;
-    transition: all 0.3s ease 0s;
-    @media (any-hover: hover) {
-      &:hover ._icon-productArrow {
-        opacity: 1;
-      }
-      &:hover ._bgcolor-hover {
-        opacity: 1;
-      }
-    }
-  }
-  // .another-product__product-title
-  &__product-title {
-    word-break: break-word;
-    margin-bottom: 10px;
-    padding-right: 15px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 18px;
-  }
-  // .another-product__product-subtitle
-  &__product-subtitle {
-    @include adaptiv-font(14, 12, 14);
-    line-height: 18 / 14 * 100%;
-    color: $gray80;
-  }
-  // .another-product__icon
-  &__icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 95% 95%;
-    &_1 {
-      background-image: url(../img/catalog/colored7.svg);
-    }
-    &_2 {
-      background-image: url(../img/catalog/colored8.svg);
-    }
-    &_3 {
-      background-image: url(../img/catalog/colored9.svg);
-    }
-    &_4 {
-      background-image: url(../img/catalog/colored10.svg);
-    }
-    &_5 {
-      background-image: url(../img/catalog/colored11.svg);
-    }
-    &_6 {
-      background-image: url(../img/catalog/colored12.svg);
-    }
-    &_7 {
-      background-image: url(../img/catalog/colored1.svg);
-    }
-    &_8 {
-      background-image: url(../img/catalog/colored2.svg);
-    }
-    &_9 {
-      background-image: url(../img/catalog/colored4.svg);
-    }
-    &_10 {
-      background-image: url(../img/catalog/colored5.svg);
-    }
-    &_11 {
-      background-image: url(../img/catalog/colored6.svg);
-    }
-  }
+		// .another-product__scrollbar-slider
+		&__scrollbar-slider {
+      overflow: visible;
+      @include adaptiv-value("margin-bottom", 100, 50, 1);
+		}
+		// .another-product__item
+		&__item {
+      @extend .item-catalog;
+      @include adaptiv-value("width", 212, 147, 1);
+		}
+		// .another-product__title
+		&__title {
+      @extend .item-catalog__title;
+		}
+		// .another-product__sub-title
+		&__sub-title {
+      @extend .item-catalog__sub-title;
+		}
+		// .another-product__body
+		&__body {
+      @extend .item-catalog__body;
+		}
+		// .another-product__arrow
+		&__arrow {
+      @extend .item-catalog__arrow;
+		}
+		// .another-product__icon-wrapper
+		&__icon-wrapper {
+      @extend .item-catalog__icon-wrapper;
+		}
+		// .another-product__icon
+		&__icon {
+      @extend .item-catalog__icon;
+			// .another-product__icon_default
+			&_default {
+        @extend .item-catalog__icon_default;
+			}
+			// .another-product__icon_colored
+			&_colored {
+        @extend .item-catalog__icon_colored;
+			}
+		}
 }
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
 
 body > div.wrapper._loaded > main > section.product__another.another-product._container > div > div.swiper-scrollbar {
   margin-top: 20px;

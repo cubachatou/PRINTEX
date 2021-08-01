@@ -2886,20 +2886,25 @@ if (sliderScrollItems.length > 0) {
 		const sliderScrollItem = sliderScrollItems[index];
 		const sliderScrollBar = sliderScrollItem.querySelector('.swiper-scrollbar');
 		const sliderScroll = new Swiper(sliderScrollItem, {
-			observer: true,
-			observeParents: true,
-			direction: 'horizontal',
-			slidesPerView: 'auto',
-			freeMode: true,
-			scrollbar: {
-				el: sliderScrollBar,
-				draggable: true,
-				snapOnRelease: false
-			},
-			mousewheel: {
-				releaseOnEdges: true,
-			},
-		});
+      observer: true,
+      observeParents: true,
+      direction: "horizontal",
+      slidesPerView: "auto",
+      freeMode: true,
+      scrollbar: {
+        el: sliderScrollBar,
+        draggable: true,
+        snapOnRelease: false,
+      },
+      mousewheel: {
+        releaseOnEdges: true,
+      },
+      breakpoints: {
+        768: {
+          spaceBetween: 10,
+        }
+      },
+    });
 		sliderScroll.scrollbar.updateSize();
 	}
 }
@@ -2971,6 +2976,7 @@ let sliderSlider = new Swiper(".slider__body", {
 
 
 function sliders_bild_callback(params) {}
+
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {
