@@ -91,14 +91,16 @@
   &__column {
     // .body-product__column_left
     &_left {
-      position: relative;
       flex: 0 0 655 / 1320 * 100%;
+      // padding-top: 32.804%;
+      height: 423px;
+      margin-bottom: 30px;
       @media (max-width: $md3+px) {
-        background-size: cover;
-        margin: 0 -15px;
+        margin: 0 -15px 30px;
+        padding-top: 68.1%;
         }
         @media (max-width: $md4+px) {
-          margin: 0 -8px;
+          margin: 0 -8px 37px;
         }
     }
     // .body-product__column_right
@@ -143,49 +145,6 @@
         height: 36px;
         opacity: 1;
       }
-    }
-  }
-  // .body-product__imgarea
-  &__imgblock {
-    flex: 0 0 665 / $maxWidthContainer * 100%;
-    @include adaptiv-value(height, 423, 207, 1);
-    width: 100%;
-    margin-bottom: 1.9em;
-    &_1 {
-      background: url(../img/products/visitcards.webp) no-repeat 50% 50% / cover;
-    }
-    &_2 {
-      background: url(../img/products/calendar.webp) no-repeat 50% 50% / cover;
-    }
-    &_3 {
-      background: url(../img/products/booklet.webp) no-repeat 50% 50% / cover;
-    }
-    &_4 {
-      background: url(../img/products/euroflyers.webp) no-repeat 50% 50% / cover;
-    }
-    &_5 {
-      background: url(../img/products/envelope.webp) no-repeat 50% 50% / cover;
-    }
-    &_6 {
-      background: url(../img/products/flyer.webp) no-repeat 50% 50% / cover;
-    }
-    &_7 {
-      background: url(../img/products/acrylic.webp) no-repeat 50% 50% / cover;
-    }
-    &_8 {
-      background: url(../img/products/pvcplastic.webp) no-repeat 50% 50% / cover;
-    }
-    &_9 {
-      background: url(../img/products/sticker.webp) no-repeat 50% 50% / cover;
-    }
-    &_10 {
-      background: url(../img/products/poster.webp) no-repeat 50% 50% / cover;
-    }
-    &_11 {
-      background: url(../img/products/wallpaper.webp) no-repeat 50% 50% / cover;
-    }
-    &_12 {
-      background: url(../img/products/widescreen.webp) no-repeat 50% 50% / cover;
     }
   }
   // .body-product__list
