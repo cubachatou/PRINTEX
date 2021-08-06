@@ -2752,12 +2752,12 @@ body.ie ._ibg img {
 
 .item-catalog__icon_default,
 .another-product__icon_default {
-  background: url(../img/catalog/catalog-icon3.svg) no-repeat 100% 100%/contain;
+  background: url(../img/catalog/catalog-icon3.svg) no-repeat 90% 100%/auto;
 }
 
 .item-catalog__icon_colored,
 .another-product__icon_colored {
-  background: url(../img/catalog/colored3.svg) no-repeat 100% 100%/contain;
+  background: url(../img/catalog/colored3.svg) no-repeat 90% 100%/auto;
   opacity: 0;
   visibility: hidden;
 }
@@ -4108,11 +4108,6 @@ body > div.wrapper._loaded > main > section > div > div.help__tabs-block._tabs >
 
   .catalog {
     margin-bottom: calc(70px + 45 * ((100vw - 320px) / 1030));
-  }
-
-  .item-catalog__icon-wrapper,
-  .another-product__icon-wrapper {
-    height: calc(87px + 11 * ((100vw - 320px) / 1030));
   }
 
   .whyus__logo {

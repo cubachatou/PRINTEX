@@ -92,7 +92,7 @@
 		&__icon-wrapper {
       position: relative;
       display: block;
-      @include adaptiv-value("height", 98, 87, 1);
+      height: 98px;
       width: 100%;
       max-width: 161px;
       @media (max-width: $md2+px) {
@@ -108,13 +108,13 @@
       height: 100%;
       transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
       &_default {
-        background: url(../img/catalog/catalog-icon3.svg) no-repeat 100% 100% / contain;
+        background: url(../img/catalog/catalog-icon3.svg) no-repeat 90% 100% / auto;
         @media (max-width: $md2+px) {
           display: none;
         }
       }
       &_colored {
-        background: url(../img/catalog/colored3.svg) no-repeat 100% 100% / contain;
+        background: url(../img/catalog/colored3.svg) no-repeat 90% 100% / auto;
         opacity: 0;
         visibility: hidden;
         @media (max-width: $md2+px) {
