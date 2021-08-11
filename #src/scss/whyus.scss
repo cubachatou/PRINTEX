@@ -108,15 +108,12 @@
       height: 146px;
       background: url(../img/whyUs/mail.png) no-repeat 30% 50% / contain;
       @media (max-width: 858px) {
-        background: url(../img/whyUs/mail.png) no-repeat 50% 50% / contain;
-        flex: 0 0 163px;
         order: 2;
-        // background: url(../img/whyUs/mail.png) no-repeat 50% 50% / auto;
+        flex: 0 0 30%;
+        margin: 0;
+        height: 82px;
+        background: url(../img/whyUs/mail.png) no-repeat 50% 50% / contain;
       }
-      // @media (max-width: $md4+px) {
-      //   background: url(../img/whyUs/mail.png) no-repeat 50% 50% / contain;
-      //   max-height: 91px;
-      // }
 		}
 		// .consultation__text
 		&__text {
@@ -125,13 +122,18 @@
       color: $gray80;
       line-height: 20/16 * 100%;
       @media (max-width: 858px) {
+        order: 1;
+        flex: 0 0 70%;
+        margin: 0;
         text-align: left;
-        flex: 0 0 60%;
       }
 		}
 		// .consultation__btn
 		&__btn {
       padding: 17px 24.15px;
+      @media (max-width: $md2+px) {
+        margin: 20px 0px 0px 0px;
+      }
 		}
 }
 
@@ -183,13 +185,6 @@
       &__text {
         font-size: 14px;
         padding-top: 13px;
-      }
-  }
-
-  .consultation {
-      &__btn {
-        // margin-top: 20px;
-        margin-bottom: 0;
       }
   }
   body > div > main > section.whyus > div > div > div.whyus__consultation.consultation > a {

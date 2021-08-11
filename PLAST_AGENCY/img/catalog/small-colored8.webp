@@ -1,18 +1,25 @@
-<svg width="97" height="85" viewBox="0 0 97 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.624 57.6794V60.6112" stroke="black"/>
-<path d="M48.7822 78.6903V81.622" stroke="black"/>
-<path d="M47.3241 37.9541L96.4227 60.0094L39.5735 67.0568L23.1296 51.0828L47.3241 37.9541Z" fill="#A0D9BC"/>
-<path d="M85.4287 57.6794V60.6112" stroke="black"/>
-<path d="M85.4016 60.608L49.0128 81.6156L12.624 60.608" stroke="black" stroke-linejoin="bevel"/>
-<path d="M85.164 60.9472L96.4226 60.0095L58.3246 82.3994L48.9699 81.8424L85.164 60.9472Z" fill="#A0D9BC"/>
-<path d="M75.2037 52.0329L85.4016 57.6762L49.0128 78.6838L12.624 57.6762L27.6424 49.006" stroke="black" stroke-linejoin="bevel"/>
-<path d="M11.1965 28.577L10.4141 31.4024" stroke="black"/>
-<path d="M40.4348 58.4755L39.6523 61.3008" stroke="black"/>
-<path d="M81.3596 48.0071L80.5771 50.8325" stroke="black"/>
-<path d="M80.5519 50.8224L39.8764 61.3564L10.4141 31.3992" stroke="black" stroke-linejoin="bevel"/>
-<rect width="38.4772" height="39.0067" transform="matrix(0.701193 0.712971 -0.968064 0.250704 51.1914 21.2527)" fill="#B1F1D0"/>
-<path d="M51.8718 18.0398L81.3341 47.997L40.6586 58.5309L11.1963 28.5737L51.8718 18.0398Z" stroke="black" stroke-linejoin="bevel"/>
-<path d="M73.1828 44.6288L50.94 36.1299L51.2507 45.4053L41.8652 42.8745L38.9336 53.7467L73.1828 44.6288Z" fill="white"/>
-<path d="M72.883 44.0771L50.6402 35.5781L50.9509 44.8535L41.5654 42.3228L38.6338 53.1949" stroke="black"/>
-<ellipse rx="5.38073" ry="5.38073" transform="matrix(0.966342 -0.25726 0.70601 0.708202 29.9594 34.4446)" fill="white"/>
+<svg width="87" height="87" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M2.8584 53.9364V56.8681" stroke="black"/>
+<path d="M39.0166 74.9473V77.879" stroke="black"/>
+<path d="M37.5585 34.2111L86.6571 56.2664L29.8079 63.3138L13.364 47.3398L37.5585 34.2111Z" fill="#A0D9BC"/>
+<path d="M75.6631 53.9364V56.8681" stroke="black"/>
+<path d="M75.636 56.865L39.2472 77.8725L2.8584 56.865" stroke="black" stroke-linejoin="bevel"/>
+<path d="M75.3984 57.2042L86.657 56.2664L48.559 78.6563L39.2043 78.0993L75.3984 57.2042Z" fill="#A0D9BC"/>
+<path d="M65.4381 48.2899L75.636 53.9332L39.2472 74.9407L2.8584 53.9332L17.8768 45.2629" stroke="black" stroke-linejoin="bevel"/>
+<path d="M1.43087 24.834L0.648438 27.6594" stroke="black"/>
+<path d="M30.6692 54.7324L29.8867 57.5578" stroke="black"/>
+<path d="M71.594 44.264L70.8115 47.0894" stroke="black"/>
+<path d="M70.7863 47.0794L30.1108 57.6133L0.648438 27.6561" stroke="black" stroke-linejoin="bevel"/>
+<rect width="38.4772" height="39.0067" transform="matrix(0.701193 0.712971 -0.968064 0.250704 41.4258 17.5096)" fill="#B1F1D0"/>
+<path d="M42.1062 14.2968L71.5685 44.2539L30.893 54.7879L1.43066 24.8307L42.1062 14.2968Z" stroke="black" stroke-linejoin="bevel"/>
+<path d="M63.4172 40.8858L41.1744 32.3868L41.485 41.6622L32.0996 39.1315L29.168 50.0036L63.4172 40.8858Z" fill="white"/>
+<path d="M63.1174 40.334L40.8746 31.8351L41.1852 41.1105L31.7998 38.5797L28.8682 49.4519" stroke="black"/>
+<ellipse rx="5.38073" ry="5.38073" transform="matrix(0.966342 -0.25726 0.70601 0.708202 20.1938 30.7015)" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="87" height="87" fill="white"/>
+</clipPath>
+</defs>
 </svg>

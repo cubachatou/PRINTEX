@@ -135,12 +135,18 @@ h4 {
   opacity: 0;
   z-index: -1;
   transition: opacity 0.3s ease 0s;
+  @media (max-width: $md2+px) {
+    opacity: 1;
+  }
   &-blue {
     background: linear-gradient(
       221.35deg,
       rgba(255, 239, 166, 0) 0%,
       #d4eefc 100%
     );
+    @media (max-width: $md2+px) {
+      background: #D4EEFC;
+    }
   }
   &-yellow {
     background: linear-gradient(
@@ -148,6 +154,9 @@ h4 {
       rgba(255, 239, 166, 0) 0%,
       #ffefa6 100%
     );
+    @media (max-width: $md2+px) {
+      background: #FFEFA6;
+    }
   }
   &-purple {
     background: linear-gradient(
@@ -155,6 +164,9 @@ h4 {
       rgba(255, 239, 166, 0) 0%,
       #e5d4fc 100%
     );
+    @media (max-width: $md2+px) {
+      background: #E5D4FC;
+    }
   }
   &-green {
     background: linear-gradient(
@@ -162,6 +174,9 @@ h4 {
       rgba(255, 239, 166, 0) 0%,
       #b1f1d0 100%
     );
+    @media (max-width: $md2+px) {
+      background: #B1F1D0;
+    }
   }
   &-beige {
     background: linear-gradient(
@@ -169,6 +184,9 @@ h4 {
       rgba(255, 239, 166, 0) 0%,
       #ffe1d3 100%
     );
+    @media (max-width: $md2+px) {
+      background: #FFE1D3;
+    }
   }
   &-gray {
     background: linear-gradient(
@@ -176,6 +194,7 @@ h4 {
       rgba(255, 239, 166, 0) 0%,
       #e1e1e1 100%
     );
+    background: #E1E1E1;
   }
 }
 //</ОСНОВНОЙ БЛОК>====================================================================================================

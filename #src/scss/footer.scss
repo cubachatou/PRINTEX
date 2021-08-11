@@ -1,7 +1,7 @@
 //====================================================================================================
 .footer {
-  @include adaptiv-value(padding-top, 57, 23, 1);
-  @include adaptiv-value(padding-bottom, 35, 20, 1);
+  @include adaptiv-value(padding-top, 60, 23, 1);
+  @include adaptiv-value(padding-bottom, 72, 20, 1);
   border-top: 1px solid $mainColor;
   background: url(../img/footer-bg.jpg) no-repeat 50% 50% / cover;
   @media (max-width: $md3+px) {
