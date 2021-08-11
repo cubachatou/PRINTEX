@@ -67,19 +67,16 @@ if (sliderScrollItems.length > 0) {
 function sliders_bild_callback(params) { }
 
 let sliderSlider = new Swiper(".slider__body", {
-  /*
-	effect: 'fade',
 	autoplay: {
-		delay: 3000,
+		delay: 5000,
 		disableOnInteraction: false,
 	},
-	*/
   observer: true,
   observeParents: true,
   slidesPerView: 1,
   spaceBetween: 0,
   autoHeight: true,
-  speed: 1000,
+  speed: 1500,
   //touchRatio: 0,
   //simulateTouch: false,
   loop: true,

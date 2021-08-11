@@ -2769,7 +2769,8 @@ body.ie ._ibg img {
   visibility: hidden;
 }
 
-.item-catalog__icon_mobile {
+.item-catalog__icon_mobile,
+.another-product__icon_mobile {
   background-image: url(../img/catalog/small-colored4.svg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -3983,7 +3984,8 @@ body > div.wrapper._loaded > main > section > div > div.help__tabs-block._tabs >
     min-height: 266px;
   }
 
-  .item-catalog__icon_mobile {
+  .item-catalog__icon_mobile,
+  .another-product__icon_mobile {
     display: none;
   }
 

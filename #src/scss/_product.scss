@@ -414,6 +414,10 @@
 			&_colored {
         @extend .item-catalog__icon_colored;
 			}
+			// .another-product__icon_mobile
+			&_mobile {
+        @extend .item-catalog__icon_mobile;
+			}
 		}
 }
 
