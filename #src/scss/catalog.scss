@@ -14,7 +14,10 @@
       display: grid;
       grid-template-columns: repeat(6, minmax(147px, 1fr));
       gap: 15px 10px;
-      @media (max-width: $md2+px) {
+      @media (max-width: $md1+px) {
+        grid-template-columns: repeat(5, minmax(147px, 1fr));
+      }
+      @media (max-width: 1150px) {
         grid-template-columns: repeat(4, minmax(147px, 1fr));
       }
       @media (max-width: $md3+px) {
@@ -36,6 +39,7 @@
   border-radius: 1px;
   @media (max-width: $md2+px) {
     padding: 21px 0px 0px;
+    border-radius: 8px
   }
   @media (any-hover: hover) {
     &:hover {
@@ -109,21 +113,34 @@
       height: 100%;
       transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
       &_default {
-        background: url(../img/catalog/catalog-icon4.svg) no-repeat 100% 100% / contain;
+        background-image: url(../img/catalog/catalog-icon4.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
         @media (max-width: $md2+px) {
           display: none;
         }
       }
       &_colored {
-        background: url(../img/catalog/colored4.svg) no-repeat 100% 100% / contain;
+        background-image: url(../img/catalog/colored4.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
         opacity: 0;
         visibility: hidden;
         @media (max-width: $md2+px) {
-          background: url(../img/catalog/small-colored10.svg) no-repeat bottom right / contain;
-          opacity: 1;
-          visibility: visible;
-          background-size: auto;
+          display: none;
         }
       }
+			// .item-catalog__icon_mobile
+			&_mobile {
+        background-image: url(../img/catalog/small-colored4.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+        @media (min-width: $md2+px) {
+          display: none;
+        }
+			}
     }
 }

@@ -45,6 +45,7 @@
       background: url(../img/catalog/colored3.svg) no-repeat 50% / contain;
       @media (max-width: $md3+px) {
         flex: 0 0 100%;
+        width: 100%;
         background-image: url(../img/catalog/icon-86x86.svg);
       }
 		}
