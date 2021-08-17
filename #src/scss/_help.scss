@@ -134,17 +134,6 @@
 		&__block {
 		}
 }
-.tab-block {
-		// .tab-block__requirements
-		&__requirements {
-		}
-		// .tab-block__important
-		&__important {
-		}
-		// .tab-block__upload
-		&__upload {
-		}
-}
 .requirements-block {
 		// .requirements-block__title
 		&__title {
@@ -155,18 +144,7 @@
 		}
 		// .requirements-block__list-item
 		&__list-item {
-      display: flex;
-      align-items: baseline;
-      @include adaptiv-value(margin-bottom, 80, 40, 1);
-      @include adaptiv-font(18, 16, 18);
-      line-height: 28 / 18 * 100%;
-      &::before {
-        font-size: 8px;
-        margin-right: 20px;
-      }
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
+      
 		}
 }
 .important-block {

@@ -439,6 +439,51 @@ body.ie {
   &._active {
     display: block;
   }
+  & b {
+    margin-bottom: 10px;
+    font-weight: 500;
+    @include adaptiv-font(24, 18, 24);
+  }
+  & p {
+    margin: 0px 0px 10px 0px;
+    @include adaptiv-font(18, 16, 18);
+    line-height: 28 / 18 * 100%;
+  }
+  & ol {
+    margin: 0px 0px 0px 17.5px;
+    @include adaptiv-value(margin-bottom, 40, 20, 1);
+    @media (min-width: $md3+px) {
+    margin: 0 0 40px 50px;
+    & li {
+      @include adaptiv-value(padding-left, 10, 0, 1);
+      @include adaptiv-font(16, 14, 16);
+      line-height: 24 / 16 * 100%;
+      }
+    }
+  }
+  & ul {
+    margin: 0px 0px 40px 0px;
+    padding: 0px 0px 0px 20px;
+    & li {
+      @include adaptiv-font(18, 16, 18);
+      line-height: 28 / 18 * 100%;
+      &:not(:last-child) {margin-bottom: 10px;}
+      list-style-type: disc;
+      &::marker {
+        display: block;
+      }
+    }
+  }
+  & i {
+    font-weight: 500;
+    font-style: normal;
+    @include adaptiv-font(18, 16, 18);
+    line-height: 28px;
+    color: #FF6060;
+    @media (max-width: $md4+px) {
+      font-weight: 400;
+    }
+  }
 }
 //=====================================================================================================================
 .mirror {
