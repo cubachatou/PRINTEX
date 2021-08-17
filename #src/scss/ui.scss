@@ -436,6 +436,15 @@ body.ie {
 }
 ._tabs-block {
   display: none;
+  & b {
+    @include adaptiv-value(margin-bottom, 25, 10, 1);
+    font-weight: 500;
+    @include adaptiv-font(24, 18, 24);
+  }
+  & p {
+    @include adaptiv-font(18, 16, 18);
+    line-height: 28 / 18 * 100%;
+  }
   &._active {
     display: block;
   }

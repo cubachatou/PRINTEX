@@ -822,7 +822,7 @@ if (sliderScrollItems.length > 0) {
       observer: true,
       observeParents: true,
       direction: "horizontal",
-      slidesPerView: "auto",
+      slidesPerView: 6,
       freeMode: true,
       scrollbar: {
         el: sliderScrollBar,
