@@ -3123,6 +3123,10 @@ body.ie ._ibg img {
   margin-top: 34px;
 }
 
+.table-product {
+  margin: 0px auto 80px auto;
+}
+
 .table-product__table {
   border-bottom: 3px solid #000000;
   border-collapse: collapse;
@@ -3227,16 +3231,13 @@ body.ie ._ibg img {
 }
 
 .product-info {
+  margin-bottom: 100px;
   padding-top: 80px;
   padding-right: 235px;
 }
 
-.product-info > div {
+.product-info > div:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.product-info > div:last-child {
-  margin-bottom: 100px;
 }
 
 .product-info .popup__title,
@@ -3270,7 +3271,6 @@ body.ie ._ibg img {
 
 .another-product__scrollbar-slider {
   overflow: visible;
-  margin-bottom: 100px;
 }
 
 .another-product__item {
@@ -4188,15 +4188,15 @@ body > div.wrapper._loaded > main > section > div > div.help__tabs-block._tabs >
   }
 
   .product-info {
+    margin-bottom: calc(60px + 40 * ((100vw - 320px) / 1030));
+  }
+
+  .product-info {
     padding-top: calc(60px + 20 * ((100vw - 320px) / 1030));
   }
 
   .product-info {
     padding-right: calc(0px + 235 * ((100vw - 320px) / 1030));
-  }
-
-  .product-info > div:last-child {
-    margin-bottom: calc(60px + 40 * ((100vw - 320px) / 1030));
   }
 
   .another-product__section-title {
@@ -4205,10 +4205,6 @@ body > div.wrapper._loaded > main > section > div > div.help__tabs-block._tabs >
 
   .another-product__section-title {
     font-size: calc(30px + 6 * ((100vw - 320px) / 1030));
-  }
-
-  .another-product__scrollbar-slider {
-    margin-bottom: calc(50px + 50 * ((100vw - 320px) / 1030));
   }
 
   .another-product__item {
@@ -5104,6 +5100,10 @@ body > div.wrapper._loaded > main > section > div > div.help__tabs-block._tabs >
 
   .body-product__link:not(:last-child) {
     margin-bottom: 40px;
+  }
+
+  .another-product__scrollbar-slider {
+    margin: 0px 0px 50px 0px;
   }
 
   .contacts-page__map {

@@ -2889,7 +2889,7 @@ if (sliderScrollItems.length > 0) {
       observer: true,
       observeParents: true,
       direction: "horizontal",
-      slidesPerView: 6,
+      slidesPerView: "auto",
       freeMode: true,
       scrollbar: {
         el: sliderScrollBar,
@@ -2900,9 +2900,9 @@ if (sliderScrollItems.length > 0) {
         releaseOnEdges: true,
       },
       breakpoints: {
-        768: {
+        991.98: {
           spaceBetween: 10,
-        }
+        },
       },
     });
 		sliderScroll.scrollbar.updateSize();
@@ -2921,7 +2921,7 @@ let sliderSlider = new Swiper(".slider__body", {
   observeParents: true,
   slidesPerView: 1,
   spaceBetween: 0,
-  autoHeight: true,
+  autoHeight: false,
   speed: 1500,
   //touchRatio: 0,
   //simulateTouch: false,
