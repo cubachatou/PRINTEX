@@ -1217,19 +1217,6 @@ body.ie ._ibg img {
   display: none;
 }
 
-._tabs-block b {
-  display: block;
-  font-weight: 500;
-  font-size: calc(18px + 6 * ((100vw - 320px) / 1120));
-}
-
-._tabs-block p {
-  display: block;
-  margin: 0px 0px 10px 0px;
-  font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
-  line-height: 155.55556%;
-}
-
 ._tabs-block._active {
   display: block;
 }
@@ -3050,7 +3037,6 @@ body.ie ._ibg img {
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.2em;
-  width: 201px;
 }
 
 .body-product__column_right .form__line_range {
@@ -5098,6 +5084,14 @@ body > div.wrapper._loaded > main > section > div > div.help__tabs-block._tabs >
 
   .body-product__link:not(:last-child) {
     margin-bottom: 40px;
+  }
+
+  .body-product__link_upload {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .body-product__link_order {
+    margin: 0px 0px 0px 0px;
   }
 
   .another-product__scrollbar-slider {

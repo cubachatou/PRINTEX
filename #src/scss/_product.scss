@@ -125,7 +125,6 @@
         font-size: 12px;
         line-height: 12px;
         letter-spacing: 0.2em;
-        width: 201px;
         @media (max-width: $md3+px) {
           width: 100%;
         }
@@ -196,10 +195,16 @@
     &_upload {
       cursor: pointer;
       margin-left: 15px;
+      @media (max-width: $md3+px) {
+        margin: 0px 0px 0px 0px;
+      }
     }
     // .body-product__link_order
     &_order {
       margin-left: 20px;
+      @media (max-width: $md3+px) {
+        margin: 0px 0px 0px 0px;
+      }
     }
   }
 }
