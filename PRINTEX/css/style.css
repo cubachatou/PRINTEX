@@ -3016,7 +3016,10 @@ body.ie ._ibg img {
           flex: 0 0 17.85714%;
   height: 81px;
   min-height: 86px;
-  background: url(../img/catalog/colored3.svg) no-repeat 50%/contain;
+  background-image: url(../img/catalog/colored3.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
 }
 
 .header-product__textarea {
@@ -3281,8 +3284,8 @@ body.ie ._ibg img {
 .product-info h2 {
   margin-bottom: 20px;
   font-weight: 500;
-  font-size: calc(30px + 18 * ((100vw - 320px) / 1120));
-  line-height: 116.66667%;
+  font-size: calc(26px + 10 * ((100vw - 320px) / 1120));
+  line-height: 127.77778%;
 }
 
 .product-info p {
@@ -3293,6 +3296,26 @@ body.ie ._ibg img {
 
 .product-info p:not(:last-child) {
   margin-bottom: 25px;
+}
+
+.product-info ul {
+  margin: 0px 0px 40px 0px;
+  padding: 0px 0px 0px 20px;
+  color: #808080;
+}
+
+.product-info ul li {
+  font-size: 16px;
+  line-height: 100%;
+  list-style-type: disc;
+}
+
+.product-info ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.product-info ul li::marker {
+  display: block;
 }
 
 .another-product__section-title {
