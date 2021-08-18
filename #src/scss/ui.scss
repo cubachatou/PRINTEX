@@ -134,9 +134,11 @@ h4 {
   height: 100%;
   opacity: 0;
   z-index: -1;
+  border-radius: 1px;
   transition: opacity 0.3s ease 0s;
   @media (max-width: $md2+px) {
     opacity: 1;
+    border-radius: 8px;
   }
   &-blue {
     background: linear-gradient(
@@ -440,6 +442,7 @@ body.ie {
     display: block;
   }
   & b {
+    display: block;
     margin-bottom: 10px;
     font-weight: 500;
     @include adaptiv-font(24, 18, 24);

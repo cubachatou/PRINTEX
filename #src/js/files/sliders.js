@@ -45,6 +45,8 @@ if (sliderScrollItems.length > 0) {
       direction: "horizontal",
       slidesPerView: "auto",
       freeMode: true,
+      loop: false,
+      // width: 1505,
       scrollbar: {
         el: sliderScrollBar,
         draggable: true,
@@ -53,9 +55,14 @@ if (sliderScrollItems.length > 0) {
       mousewheel: {
         releaseOnEdges: true,
       },
+      touchReleaseOnEdges: true,
       breakpoints: {
         991.98: {
           spaceBetween: 10,
+          slidesOffsetAfter: -220,
+        },
+        320: {
+          slidesOffsetAfter: -20,
         },
       },
     });

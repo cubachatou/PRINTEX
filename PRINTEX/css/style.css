@@ -958,6 +958,7 @@ h4 {
   height: 100%;
   opacity: 0;
   z-index: -1;
+  border-radius: 1px;
   -webkit-transition: opacity 0.3s ease 0s;
   -o-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
@@ -1222,6 +1223,7 @@ body.ie ._ibg img {
 }
 
 ._tabs-block b {
+  display: block;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: calc(18px + 6 * ((100vw - 320px) / 1120));
@@ -1381,6 +1383,7 @@ body.ie ._ibg img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
+  outline: none;
 }
 
 .noUi-touch-area {
@@ -4359,6 +4362,7 @@ body > div.wrapper._loaded > main > section > div > div.help__tabs-block._tabs >
 
   ._rgba {
     opacity: 1;
+    border-radius: 8px;
   }
 
   ._rgba-blue {
