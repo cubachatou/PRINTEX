@@ -4,4 +4,3 @@
 @@include('files/dynamic_adapt.js', {})
 @@include('files/sliders.js', {})
 @@include('files/forms.js', {})
-@@include('files/scroll.js', {})
